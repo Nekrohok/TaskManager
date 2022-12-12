@@ -1,0 +1,26 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.correct {
+    color: black !important;
+    text-decoration: none !important;
+    border: none !important;
+}
+.px-2 {
+    padding-left: 30px;
+}
+.ms-1 {
+    margin-left: 1.25rem !important;
+}

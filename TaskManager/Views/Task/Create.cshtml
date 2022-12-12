@@ -1,0 +1,50 @@
+﻿@model TaskManager.Models.TaskModel;
+
+<h1>Creating new task</h1>
+
+<form asp-action="Create" method="post">
+    <div class="row mb-3">
+        <label asp-for="Name"  class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+            <input asp-for="Name" name="Name" autocomplete="off" type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label asp-for="Deadline"  class="col-sm-2 col-form-label">Deadline</label>
+        <div class="col-sm-10">
+            <input asp-for="Deadline" name="Deadline" autocomplete="off" type="Date" class="form-control">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label asp-for="Tags"  class="col-sm-2 col-form-label">Tags</label>
+        <div class="col-sm-10">
+            <input asp-for="Tags" name="Tags" autocomplete=" off" type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label asp-for="Description"  class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-10">
+            <input asp-for="Description" name="Description" autocomplete="off" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label asp-for="Priority" class="col-sm-2 col-form-labe">Priority</label>
+        <div class="col-sm-10">
+            <select asp-for="Priority" class="form-select">
+                <option selected>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+    </div>
+    
+
+
+
+
+
+  <button  type="submit" class="btn btn-primary">Create</button>
+</form>
